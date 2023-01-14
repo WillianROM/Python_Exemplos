@@ -4,7 +4,7 @@ class aplicativoBanco:
     from pywinauto.keyboard import send_keys
 
     def __init__(self):
-        self.caminhoDoAplicativo = r'C:\banco\Banco.exe'
+        self.caminhoDoAplicativo = r'C:\banco\Banco.exe' # O executável está disponível no site https://desafiosrpa.com.br/bank-robot.html
         
 
     def iniciar_aplicativo(self):
