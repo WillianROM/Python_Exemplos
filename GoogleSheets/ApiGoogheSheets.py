@@ -13,3 +13,4 @@
 # Passo 5: pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
 
 # Passo 6: Copie o código da documentação do google: https://developers.google.com/sheets/api/quickstart/python e cole no arquivo quickstart.py
+
