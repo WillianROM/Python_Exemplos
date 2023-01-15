@@ -1,0 +1,11 @@
+Id,Descrição,Tipo,Valor,Data
+1,Pagamento à fornecedores,Débito,"5.000,00",01/02/2019
+2,Crédito Recebido,Crédito,"10.000,00",10/02/2019
+3,Impostos Recolhidos,Débito,"500,00",10/02/2019
+4,Venda Recebida Crédito,Crédito,"5.700,00",11/02/2019
+5,Compra com Cartão Débito,Débito,"2.500,00",13/02/2019
+6,Transferência Recebida,Crédito,"3.150,00",15/02/2019
+7,Pagamento de Aluguel,Débito,"3.200,00",20/02/2019
+8,Aluguel de Veículos,Débito,"1.525,00",25/02/2019
+9,Venda Recebida Crédito,Crédito,"2.140,00",25/02/2019
+10,Venda Recebida Crédito,Crédito,"2.000,00",30/09/2019
