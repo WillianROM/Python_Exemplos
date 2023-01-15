@@ -152,3 +152,4 @@ cython_debug/
 #.idea/
 Excel_Pandas_Openpyxl/
 Teste_de_Unidade_Iterasys/
+GoogleSheets/client_secret.json
