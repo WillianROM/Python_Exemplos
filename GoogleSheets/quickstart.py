@@ -12,7 +12,8 @@ from googleapiclient.errors import HttpError
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
 
 # The ID and range of a sample spreadsheet.
-SAMPLE_SPREADSHEET_ID = '1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms'
+import idPlanilhaTeste
+SAMPLE_SPREADSHEET_ID = idPlanilhaTeste.id_Planilha # Id da planilha que será manipulado, deixei o id dessa planilha em outro arquivo py chamado idPlanilhaTeste que não vai ficar disponível no meu gitHub
 SAMPLE_RANGE_NAME = 'Class Data!A2:E'
 
 
