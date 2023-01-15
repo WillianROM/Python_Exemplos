@@ -152,3 +152,4 @@ cython_debug/
 #.idea/
 GoogleSheets/client_secret.json
 GoogleSheets/idPlanilhaTeste.py
+GoogleSheets/credentials.json
