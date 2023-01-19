@@ -72,21 +72,52 @@ for name, email in distro:
         <span style="font-family: 'Lucida Sans'; font-size: 28; color: #8d395c;">
            {name}, desejo a você tudo de melhor no seu aniversário!!
             <p>Um grande abraço da esquipe da {empresa}<p/>
-        </span>
+        </span><br>
         <div>
-            <img src={excel_image_path}>
+           bolo
         </div>
+        <div>
+            <img src='{excel_image_path}' with=50%>
+        </div><br>
         <div>
             {tabela}
         </div>
     </div><br>
-    <div>
-        <img src='{anexo_image_path}' with=50%>
-    </div>
 </body>
 
 """
+
     message.HTMLBody = html_body + message.HTMLBody
+
+
+#################################################################################################
+# Adicionar SOMBRAS para a imagem no e-mail # https://www.youtube.com/watch?v=y7zEtV4yRVs&list=PLHnSLOMOPT11njaNmENJN6p2ro9MTc7t_&index=16&ab_channel=IzzyAnalytics
+    inspector = message.GetInspector
+    inspector.Display()
+    doc = inspector.WordEditor
+
+    selection = doc.Content
+    selection.Find.Text = 'bolo'
+    selection.Find.Execute()
+    selection.text = ""
+
+    img = selection.InlineShapes.AddPicture(anexo_image_path, 0, 1)
+    shadow = img.Shadow
+    shadow.Blur = 23
+    shadow.Transparency = 0.35
+
+    # tipo de sombras(shadow.Type):
+    # flat - 1-20
+    # outer - 21-29
+    # inner - 30-38
+    # perspective - 39-43
+    shadow.Type = 21
+
+#################################################################################################
 
     #message.Send()
     sleep(3)
+
+
+# Download email attachments: https://github.com/israel-dryer/Outlook-Python-Tutorial/wiki/Download-email-attachments
+# Reply emails: https://gist.github.com/israel-dryer/79dfa1b62e3015d0223e4fc072b7b410
