@@ -21,4 +21,11 @@ print(precos_com_imposto2)
 # Vamos calcular o preço com imposto em uma base de dados Python:
 # Base Vendas.xlsx
 
+import pandas as pd
+tabela = pd.read_excel('Python_Exemplos\Map_no_Python\Base Vendas.xlsx')
+print(tabela)
 
+tabela['Preco com Imposto'] = list(map(adicionar_imposto, tabela['Preco Unitario']))
+print(tabela)
+
+tabela.to_excel("Base Vendas Atualizada.xlsx")
