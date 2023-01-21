@@ -21,4 +21,11 @@ def pegar_arquivos_pastas(pasta):
 
 
 pegar_arquivos_pastas("Arquivos")
-print(arquivos_extraidos)
+# print(arquivos_extraidos)
+
+
+meses_sistema = ['ago2020', 'mai2020','ago2021','mai2021', 'abr2018','mai2018', 'set2018', 'set2019','mai2019', 'jul2017','mai2017' ,'dez2022', 'fev2022']
+
+for mes in meses_sistema:
+    if mes not in arquivos_extraidos:
+        print(f"Mês {mes} está na lista dos meses_sistema, mas não está nos arquivos_extraídos.")
