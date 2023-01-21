@@ -153,3 +153,4 @@ cython_debug/
 GoogleSheets/idPlanilhaTeste.py
 GoogleSheets/credentials.json
 GoogleSheets/token.json
+SQL/server.py
